@@ -1,6 +1,6 @@
 {
   "name": "@lukasbach/campaigns-fetch",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "author": "Lukas Bach <lbach@outlook.de>",
   "homepage": "https://github.com/lukasbach/lib#readme",
   "license": "MIT",
@@ -14,7 +14,7 @@
     "typescript": "^4.2.4"
   },
   "devDependencies": {
-    "@lukasbach/tsconfig": "^1.0.0"
+    "@lukasbach/tsconfig": "^0.0.1"
   },
   "scripts": {
     "build": "tsc"

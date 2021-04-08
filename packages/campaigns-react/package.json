@@ -1,6 +1,6 @@
 {
   "name": "@lukasbach/campaigns-react",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Lukas Bach <lbach@outlook.de>",
   "license": "MIT",
   "main": "lib/index.js",
@@ -19,13 +19,13 @@
   "devDependencies": {
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
-    "@lukasbach/tsconfig": "^1.0.0",
+    "@lukasbach/tsconfig": "^0.0.1",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "typescript": "^4.2.4"
   },
   "dependencies": {
-    "@lukasbach/campaigns-fetch": "^1.0.0",
+    "@lukasbach/campaigns-fetch": "^0.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   }
