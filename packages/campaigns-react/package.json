@@ -28,5 +28,8 @@
     "@lukasbach/campaigns-fetch": "^0.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

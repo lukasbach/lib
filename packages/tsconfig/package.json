@@ -3,5 +3,8 @@
   "version": "0.0.1",
   "author": "Lukas Bach <lbach@outlook.de>",
   "license": "MIT",
-  "repository": "https://github.com/lukasbach/lib/tree/master/packages/tsconfig"
+  "repository": "https://github.com/lukasbach/lib/tree/master/packages/tsconfig",
+  "publishConfig": {
+    "access": "public"
+  }
 }
