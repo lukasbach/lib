@@ -1,0 +1,22 @@
+{
+  "name": "@lukasbach/campaigns-fetch",
+  "version": "1.0.0",
+  "author": "Lukas Bach <lbach@outlook.de>",
+  "homepage": "https://github.com/lukasbach/lib#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": "https://github.com/lukasbach/lib/tree/master/packages/campaigns-fetch",
+  "bugs": {
+    "url": "https://github.com/lukasbach/lib/issues"
+  },
+  "dependencies": {
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "@lukasbach/tsconfig": "^1.0.0"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}

@@ -12,7 +12,6 @@
     "strictNullChecks": true,
     "strictBindCallApply": true,
     "strictFunctionTypes": true,
-    "strictPropertyInitialization": true,
-    "outDir": "lib"
+    "strictPropertyInitialization": true
   }
 }

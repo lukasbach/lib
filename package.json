@@ -14,6 +14,8 @@
   },
   "scripts": {
     "manypkg:check": "manypkg check",
-    "manypkg:fix": "manypkg fix"
+    "manypkg:fix": "manypkg fix",
+    "start": "lerna run start --parallel --npm-client=yarn",
+    "build": "lerna run build --npm-client=yarn --stream"
   }
 }
