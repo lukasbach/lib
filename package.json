@@ -1,0 +1,12 @@
+{
+  "name": "@lukasbach/root",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lukasbach/lib",
+  "author": "Lukas Bach <lbach@outlook.de>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
