@@ -17,10 +17,12 @@ export const Campaign: React.FC<{
       const campaignsFetched = await fetchCampaignData(props);
       setCampaigns(campaignsFetched);
 
+      const chooseCampaign = () => campaignsFetched[Math.floor(Math.random() * campaignsFetched.length)]
+      setCampaign(chooseCampaign());
+
       if (props.changeInterval !== undefined) {
         intervalId = setInterval(() => {
-          const nextCampaign = campaignsFetched[Math.floor(Math.random() * campaignsFetched.length)];
-          setCampaign(nextCampaign);
+          setCampaign(chooseCampaign());
         }, props.changeInterval * 1000);
       }
     })();
