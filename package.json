@@ -8,5 +8,12 @@
   "private": true,
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@manypkg/cli": "^0.17.0"
+  },
+  "scripts": {
+    "manypkg:check": "manypkg check",
+    "manypkg:fix": "manypkg fix"
+  }
 }

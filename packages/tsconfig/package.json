@@ -1,0 +1,7 @@
+{
+  "name": "@lukasbach/tsconfig",
+  "version": "1.0.0",
+  "author": "Lukas Bach <lbach@outlook.de>",
+  "license": "MIT",
+  "repository": "https://github.com/lukasbach/lib/tree/master/packages/tsconfig"
+}
