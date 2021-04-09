@@ -10,11 +10,41 @@ export interface CampaignData {
   short: string;
   long?: string;
   url: string;
+  weight?: number;
 }
 
-let cached: CampaignData[] | undefined = undefined;
+let cached: CampaignService | undefined = undefined;
 
-export const fetchCampaignData = async (options?: FetchCampaignDataOptions): Promise<CampaignData[]> => {
+export class CampaignService {
+
+  constructor(
+    public campaigns: CampaignData[],
+  ) {
+  }
+
+  public get totalWeight() {
+    return this.campaigns
+      .map(campaign => campaign.weight ?? 1)
+      .reduce((a, b) => a + b, 0);
+  }
+
+  public get campaignsWeighted() {
+    return this.campaigns
+      .map(campaign => 'x'.repeat(campaign.weight ?? 1).split('').map(x => campaign))
+      .reduce((a, b) => [...a, ...b], []);
+  }
+
+  public chooseCampaignWeighted() {
+    const campaignsWeighted = this.campaignsWeighted;
+    return campaignsWeighted[Math.floor(Math.random() * campaignsWeighted.length)];
+  }
+
+  public chooseCampaign() {
+    return this.campaigns[Math.floor(Math.random() * this.campaigns.length)];
+  }
+}
+
+export const fetchCampaignData = async (options?: FetchCampaignDataOptions): Promise<CampaignService> => {
   if (!options?.noCache && cached !== undefined) {
     return cached;
   }
@@ -27,9 +57,11 @@ export const fetchCampaignData = async (options?: FetchCampaignDataOptions): Pro
     campaigns = campaigns.filter(campaign => !options.ignore?.includes(campaign.key));
   }
 
+  const service = new CampaignService(campaigns);
+
   if (!options?.noCache) {
-    cached = campaigns;
+    cached = service;
   }
 
-  return campaigns;
+  return service;
 };

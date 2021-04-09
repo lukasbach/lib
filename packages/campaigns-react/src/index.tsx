@@ -1,4 +1,4 @@
-import { fetchCampaignData, CampaignData, FetchCampaignDataOptions } from "@lukasbach/campaigns-fetch";
+import { fetchCampaignData, CampaignData, FetchCampaignDataOptions, CampaignService } from "@lukasbach/campaigns-fetch";
 import * as React from 'react';
 import { useEffect, useState } from 'react';
 
@@ -6,23 +6,25 @@ export const Campaign: React.FC<{
   render: (campaign: CampaignData | undefined, all: CampaignData[]) => JSX.Element | string;
   /** Change interval in seconds */
   changeInterval?: number;
+  weighted?: boolean;
+  dontRenderIfLoading?: boolean;
 } & FetchCampaignDataOptions> = props => {
-  const [campaigns, setCampaigns] = useState<CampaignData[]>([]);
+  const [service, setService] = useState<CampaignService>();
   const [campaign, setCampaign] = useState<CampaignData>();
+  const weighted = props.weighted ?? true;
 
   useEffect(() => {
     let intervalId: any = undefined;
 
     (async () => {
-      const campaignsFetched = await fetchCampaignData(props);
-      setCampaigns(campaignsFetched);
+      const campaignService = await fetchCampaignData(props);
+      setService(campaignService);
 
-      const chooseCampaign = () => campaignsFetched[Math.floor(Math.random() * campaignsFetched.length)]
-      setCampaign(chooseCampaign());
+      setCampaign(weighted ? campaignService.chooseCampaignWeighted() : campaignService.chooseCampaign);
 
       if (props.changeInterval !== undefined) {
         intervalId = setInterval(() => {
-          setCampaign(chooseCampaign());
+          setCampaign(weighted ? campaignService.chooseCampaignWeighted() : campaignService.chooseCampaign);
         }, props.changeInterval * 1000);
       }
     })();
@@ -34,9 +36,13 @@ export const Campaign: React.FC<{
     }
   }, []);
 
+  if (props.dontRenderIfLoading && !service) {
+    return null;
+  }
+
   return (
     <>
-      {props.render(campaign, campaigns)}
+      {props.render(campaign, service?.campaigns ?? [])}
     </>
   );
 }

@@ -4,12 +4,14 @@
     "product": "Yana",
     "short": "Powerful note-taking app",
     "long": "Powerful note-taking app with nested documents, full-text search, rich-text editor, code snippet editor and more",
-    "url": "https://yana.js.org/"
+    "url": "https://yana.js.org/",
+    "weight": 2
   },
   {
     "key": "mockingbirb",
     "product": "MockingBirb",
     "short": "Desktop app for configuring HTTP mocking servers",
-    "url": "https://github.com/lukasbach/mockingbirb"
+    "url": "https://github.com/lukasbach/mockingbirb",
+    "weight": 1
   }
 ]

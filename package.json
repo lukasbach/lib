@@ -16,6 +16,7 @@
     "manypkg:check": "manypkg check",
     "manypkg:fix": "manypkg fix",
     "start": "lerna run start --parallel --npm-client=yarn",
-    "build": "lerna run build --npm-client=yarn --stream"
+    "build": "lerna run build --npm-client=yarn --stream",
+    "prepublish": "yarn build"
   }
 }
