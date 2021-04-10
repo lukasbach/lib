@@ -5,13 +5,82 @@
     "short": "Powerful note-taking app",
     "long": "Powerful note-taking app with nested documents, full-text search, rich-text editor, code snippet editor and more",
     "url": "https://yana.js.org/",
-    "weight": 5
+    "weight": 15
   },
   {
     "key": "mockingbirb",
     "product": "MockingBirb",
     "short": "Desktop app for configuring HTTP mocking servers",
     "url": "https://github.com/lukasbach/mockingbirb",
-    "weight": 1
-  }
+    "weight": 10
+  },
+  {
+    "key": "devsession",
+    "product": "Devsession",
+    "short": "Collaborative web-based IDE with fast setup",
+    "long": "Open-Source collaborative IDE with many features and extremely quick setup",
+    "url": "https://devsession.js.org/",
+    "weight": 8
+  },
+  {
+    "key": "orion",
+    "product": "Orion",
+    "short": "Tile-based puzzle game",
+    "long": "Fill the board with tiles in specific colors by cleverly choosing tiles from bags and arranging them",
+    "url": "http://orion.lukasbach.com/",
+    "weight": 5
+  },
+  {
+    "key": "hexagonopolis",
+    "product": "Hexagonopolis",
+    "short": "City-building puzzle game",
+    "long": "Complete the city to solve the puzzle",
+    "url": "http://lukasbach.github.io/hexagonopolis/",
+    "weight": 2
+  },
+  {
+    "key": "personalpage",
+    "product": "lukasbach.com",
+    "short": "My personal Homepage",
+    "url": "https://lukasbach.com",
+    "weight": 10
+  },
+  {
+    "key": "inkform",
+    "product": "ink-form",
+    "short": "Complex user-friendly form component for React Ink",
+    "url": "https://lukasbach.github.io/ink-form/",
+    "weight": 2
+  },
+  {
+    "key": "toolbelt",
+    "product": "toolbelt",
+    "short": "PDF Merger, Color picker, Text Diff tool and Office media extractor",
+    "long": "PDF Merger, Color picker, Text Diff tool and Office media extractor in one webapp",
+    "url": "https://lukasbach.github.io/toolbelt/",
+    "weight": 4
+  },
+  {
+    "key": "slyder",
+    "product": "Slyder",
+    "short": "Puzzle-game with mirrored tile moving",
+    "long": "Slyder is a web-based puzzle game based around the idea of mirrored tile moving",
+    "url": "https://lukasbach.github.io/slyder/",
+    "weight": 5
+  },
+  {
+    "key": "vileo",
+    "product": "Vileo",
+    "short": "Simple screen & webcam recording tool",
+    "long": "Simple screen & webcam recording tool that works right from the browser",
+    "url": "https://lukasbach.github.io/vileo/",
+    "weight": 5
+  },
+  {
+    "key": "pdfjoin",
+    "product": "PDFJoin",
+    "short": "Quickly join PDF files from the command line",
+    "url": "https://github.com/lukasbach/pdfjoin",
+    "weight": 3
+  },
 ]
