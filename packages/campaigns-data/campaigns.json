@@ -82,5 +82,13 @@
     "short": "Quickly join PDF files from the command line",
     "url": "https://github.com/lukasbach/pdfjoin",
     "weight": 3
+  },
+  {
+    "key": "synergies",
+    "product": "Synergies",
+    "short": "Support Synergies on ProductHunt",
+    "long": "Support Synergies on ProductHunt: A smart and performant React context state library.",
+    "url": "https://www.producthunt.com/posts/synergies",
+    "weight": 25
   }
 ]
