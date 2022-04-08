@@ -86,9 +86,9 @@
   {
     "key": "synergies",
     "product": "Synergies",
-    "short": "Support Synergies on ProductHunt",
-    "long": "Support Synergies on ProductHunt: A smart and performant React context state library.",
-    "url": "https://www.producthunt.com/posts/synergies",
-    "weight": 25
+    "short": "A performant React context state library",
+    "long": "A performant and distributed React context state library.",
+    "url": "https://synergies.js.org/",
+    "weight": 10
   }
 ]
