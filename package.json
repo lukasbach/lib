@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "@lukasbach/campaigns-data",
+  "version": "0.1.0",
+  "description": "> TODO: description",
+  "author": "Lukas Bach <lbach@outlook.de>",
+  "license": "MIT",
+  "repository": "https://github.com/lukasbach/lib/tree/master/packages/campaigns-data"
+}
